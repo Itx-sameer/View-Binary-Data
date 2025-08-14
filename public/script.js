@@ -11,6 +11,9 @@ fileInput.addEventListener('change', function (event) {
         // console.log(uint8Array.length);
 
          for (let i = 0; i < uint8Array.length; i += 8) {
+            for(let j = 0;j<8 && i+j <uint8Array.length; j++){
+                
+            }
          }
     }
 });
