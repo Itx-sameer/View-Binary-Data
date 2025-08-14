@@ -17,7 +17,11 @@ fileInput.addEventListener('change', function (event) {
                 const bitData = uint8Array[bitPosition];
 
                 hex += bitData.toString(16).padStart(2, '0')+ ' ';
-                ascii += bitData >= 32 && bitData <= 126 ? String.fromCharCode(byte) : '.';
+                if(bitData >= 32 && bitData <= 126){
+                     ascii += String.fromCharCode(byte);
+                }else{
+                    ascii += '❌';
+                }
             }
          }
     }
