@@ -26,5 +26,6 @@ fileInput.addEventListener('change', function (event) {
              res += `${i.toString().padStart(4, '0')}:     ${hex.padEnd(24)}         ${ascii}\n`;
          }
          const output = document.getElementById('output');
+         output.textContent = res;
     }
 });
