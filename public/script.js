@@ -7,5 +7,6 @@ fileInput.addEventListener('change', function (event) {
     const reader = new FileReader();
     reader.onload = function (e) {
         const buffer = e.target.result;
+        const uint8Array = new Uint8Array(buffer);
     }
 });
