@@ -1,0 +1,24 @@
+{
+  "name": "view-binary-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itx-sameer/View-Binary-Data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Itx-sameer/View-Binary-Data/issues"
+  },
+  "homepage": "https://github.com/Itx-sameer/View-Binary-Data#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
