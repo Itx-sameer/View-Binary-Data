@@ -1,8 +1,15 @@
-const fileInput = document.getElementById('fileInput');
+const inputFile = document.getElementById('inputFile');
 
-fileInput.addEventListener('change', function (event) {
+inputFile.addEventListener('change', function (event) {
     const file = event.target.files[0];
-    if (!file) return;
+    if (!file)
+    {
+        alert("Select a file!");
+    }
+    else
+    {
+        alert(`selected file ${file.name}`);
+    }
 
     const reader = new FileReader();
     reader.onload = function (e) {
@@ -18,7 +25,7 @@ fileInput.addEventListener('change', function (event) {
 
                 hex += bitData.toString(16).padStart(2, '0')+ ' ';
                 if(bitData >= 32 && bitData <= 126){
-                     ascii += String.fromCharCode(byte);
+                     ascii += String.fromCharCode(bitData);
                 }else{
                     ascii += '❌';
                 }
