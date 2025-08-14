@@ -28,4 +28,5 @@ fileInput.addEventListener('change', function (event) {
          const output = document.getElementById('output');
          output.textContent = res;
     }
+    reader.readAsArrayBuffer(file);
 });
